@@ -10,14 +10,15 @@ public class Incremental {
 	}
 	
 	public static synchronized Incremental getInstance() {
-		if(incremental ==null) {
+		if(incremental == null) {
 			incremental = new Incremental();
 		}
+		++count;
 		return incremental;
 	}
 	
 	public String toString() {
-		return "Incremental " + numero;
+		return "Incremental " + count;
 	}
 }
 
