@@ -5,7 +5,7 @@ public class Incremental {
 	private int numero;
 	private static Incremental incremental = null;
 	
-	public Incremental() {
+	private Incremental() {
 		numero = ++count;
 	}
 	
