@@ -55,7 +55,7 @@ class Card {
 }
 
 class Deck {
-	public Deck( ) {
+	private Deck( ) {
 		cards = new ArrayList<Card>( );
 		// build the deck
 		Suit[] suits = {Suit.SPADES, Suit.HEARTS, Suit.CLUBS,
